@@ -1,0 +1,318 @@
+/* copy */
+:root{
+    --white-color:white;
+    --background-color:rgb(124, 122, 122);
+    --box-color:#F5F5F5;
+    --black-color:black;
+    --main-color:#3fcdad;
+    --background_nav-color:#E3EFED;
+    --text1-color:#6A717E;
+    --text2-color:#000000;
+    --text3-color:#FFFFFF;
+    --icon1-color:#34BEA2;
+    --icon2-color:#C0C0C0;
+    --card1_gardiant1-color:#0F877C;
+    --card2_gardiant2-color:#4ADEB9;
+    --card3_gardiant3-color:#4adeb94b;
+    --successful_background-color:#4C5EB9;
+    --successful_icon-color:#71D9EC;
+    --btn_background-color:#F5F3F5;
+    --btn_text-color:#40CCAC;
+    --dark_color-color:#;
+}
+/* copy */
+body{
+    background-color: #333;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+    background-color: none;
+    color: #4ADEB9;
+    
+}
+#active{
+    background-color: #4ADEB9 ;
+    color:whitesmoke;
+    border-radius:20% ;
+}
+.inpsearch{
+    background-color: #222 ; border: none; color:  #4ADEB9;
+}
+.inpsearch::placeholder{
+    color: #ffffff8a;
+}
+.navbar .navbar-nav .nav-link{
+    color: var(--text2-color);
+}
+.navbar .navbar-nav .nav-link:active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color:  #4ADEB9;
+}
+.navbar-brand{
+    color: #4ADEB9;
+    font-family:cursive ;
+}
+#bg{
+    background:#cbe7e015;   
+}
+#search:hover{
+    background-color: #4ADEB9 ;
+    color:whitesmoke;
+}
+#icon{
+    color: #4ADEB9;
+}
+.navbar .navbar-toggler{
+color: #4ADEB9;
+font-size: 25px;
+border-color: #4ADEB9;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow:none;
+}
+
+
+
+
+
+
+.card1{
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+    width: 280px;
+    height: 171.43px;
+    color: #222;
+    background:#4ADEB9;
+}
+.card1:hover{
+    transition: .5s;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+    width: 300px;
+    height: 191.43px;
+    color: #000000;
+    background:var(--card3_gardiant3-color) ;
+}
+.card2{
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+    width: 280px;
+    height: 171.43px;
+    background-color:var(--card3_gardiant3-color) ;
+}
+.card2:hover{
+    transition: .5s;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+    width: 300px;
+    height: 191.43px;
+    background:#0F877C;
+}
+.card3{
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+    width: 280px;
+    height: 171.43px;
+    background-color:#54ebde;
+    color: whitesmoke;
+}
+.card3:hover{
+    transition: .5s;
+    color: black;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+    width: 300px;
+    height: 191.43px;
+    background:var(--card3_gardiant3-color);
+}
+.card4{
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+    width: 280px;
+    height: 171.43px;
+    background-color:#99faf5 ;
+}
+.card4:hover{
+    transition: .5s;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+    width: 300px;
+    height: 191.43px;
+    background: #0F877C;
+}
+#id_card{
+    padding-top: 80px;
+}
+#palance{
+    color: var(--text1-color);
+    font-size: 25px;
+}
+.total_cash{
+    margin-left: 20px;
+    border-radius: 15px;
+    width: 150px;
+    height: 86.25px;
+    background-color:#222 ;
+    color: #0F877C;
+}
+.carding{
+    margin-left: 20px;
+    border-radius: 15px;
+    width: 150px;
+    height: 86.25px;
+    background-color:#222 ;
+    color: #0F877C;
+
+}
+.Debts{
+    margin-left: 20px;
+    border-radius: 15px;
+    width: 150px;
+    height: 86.25px;
+    background-color:#222 ;
+    color: #0F877C;
+}
+/* .recent{
+    margin-left: 6%; 
+} */
+.Transactions1{
+    display: flex;
+    justify-content: space-around;
+    width: 430px;
+    height: 48px;
+    background-color: var(--text3-color);
+}
+.Transactions2{
+    display: flex;
+    width: 430px;
+    height: 48px;
+    background-color: var(--text3-color);
+}
+.Transactions3{
+    display: flex;
+
+    width: 430px;
+    height: 48px;
+    background-color: var(--text3-color);
+}
+.Transactions4{
+    width: 430px;
+    height: 48px;
+    background-color: var(--text3-color);
+}
+.Transactions5{
+    width: 430px;
+    height: 48px;
+    background-color: var(--text3-color);
+}
+.Transactions6{
+    width: 430px;
+    height: 48px;
+    background-color: var(--text3-color);
+}
+.chart{
+    border-radius: 10px;
+    /* width: 500px; */
+    height: 450px;
+    background-color: #4ffad2a2;
+}
+ul .ball{
+    z-index: -1;
+}
+.ball li{
+    width: 50px;
+    height: 50px;
+    list-style: none;
+    border:7px solid #0F877C;
+    border-radius: 50%;
+    margin: 2px;
+    /* z-index: -1; */
+    position: absolute;
+    animation: animate 10s  linear infinite;
+    animation-fill-mode: both;
+    opacity: 0.3;
+    
+}
+.ball li:nth-child(1){
+    bottom: 1px;
+    left: 10%;
+    width: 100px;
+    height: 100px;
+    border: 20px solid #0F877C;
+    animation-delay: 1s;
+}
+.ball li:nth-child(2){
+    bottom: 1px;
+    left: 50%;
+    width: 220px;
+    height: 220px;
+    border: 50px solid #0F877C;
+    animation-delay: 2s;
+}
+.ball li:nth-child(3){
+    top: 20%;
+    left: 15%;
+    width: 300px;
+    height: 300px;
+    border: 30px solid #0F877C;
+    animation-delay: 0s;
+}
+.ball li:nth-child(4){
+    top: 10%;
+    left: 70%;
+    width: 250px;
+    height: 250px;
+    border: 50px solid #0F877C;
+    animation-delay: 5s;
+}
+.ball li:nth-child(5){
+    top: 19%;
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    border: 30px solid #0F877C;
+    animation-delay: 7s;
+}
+.ball li:nth-child(6){
+    top: 30%;
+    left: 10%;
+    width: 200px;
+    height: 200px;
+    border: 30px solid #0F877C;
+    animation-delay: 9s;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0) translateX(0) scale(0);
+        opacity: 0;
+    }
+    25%{
+        transform: translateY(-100px) translateX(-50px) scale(0.2);
+    }
+    50%{
+        transform: translateY(0) translateX(-100px) scale(0.5);
+    }
+    75%{
+        transform: translateY(100px) translateX(-50px) scale(0.8);
+    }
+    100%{
+        transform: translateY(0) translateX(0) scale(1);
+        opacity: 0.3;
+    }
+}

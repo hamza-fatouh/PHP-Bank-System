@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!----------------- copy ------------ -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css.map">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap" rel="stylesheet">
+    
+    <!----------------- copy ------------ -->
+    <title>Home</title>
+</head>
+<body>
+    
+    <!----------------- copy ------------ -->
+    <div class="ambg">
+        <ul class="ball">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+  
+        </ul>
+    <nav class="navbar navbar-expand-lg sticky-top" id="bg">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="font-size: xx-large;">BamBank</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-md-3">
+                    <li class="nav-item">
+                        <a class="nav-link active p-2 p-lg-3" id="active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle p-2 p-lg-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: aliceblue;">
+                            services
+                        </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Cards.html"><i class="fa-solid fa-credit-card" id="icon"></i>  my cards</a></li>
+                        <li><a class="dropdown-item" href="Transfer Money.html"><i class="fa-solid fa-comments-dollar" id="icon"></i>  Transfers</a></li>
+                        <li><a class="dropdown-item" href="Chart.html"><i class="fa-solid fa-chart-simple" id="icon"></i>  chart</a></li>
+                    </ul>
+                </li>
+                    <li class="nav-item ">
+                        <a class="nav-link p-2 p-lg-3" href="about.html" style="color: aliceblue;">about</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link p-2 p-lg-3" href="Contact us.html" style="color: aliceblue;">contact</a>
+                    </li>
+                </ul>
+                    <form class="d-flex mb-1" role="search">
+                        <input class="inpsearch form-control me-2" type="search" placeholder="Search" aria-label="Search" >
+                        <button class="btn btn-outline" type="submit" id="search" style="color: aliceblue;">Search</button>
+                    </form>
+                    <div class="ms-md-3" id="icon_nav">
+                        <a href="profile.html"><i class="fa-solid fa-user iicon" id="user" ></i></a>
+                        <a href="#"><i class="ms-md-3 fa-solid fa-circle-half-stroke iicon"></i></a>
+                        <a href="#"><i class="ms-md-3 fa-solid fa-bell"></i></a>
+                    </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- --------------------copy-----------------  -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="card1">
+                <p class="ms-3 mt-2 ">VISA</p>
+                <p class="mt-auto ms-3" id="id_card">******555544466</p>
+            </div>
+            <div class="card2">
+                <p class="ms-3 mt-2">VISA</p>
+                <p class="mt-auto  ms-3" id="id_card">******78927655</p>
+            </div>
+            <div class="card3">
+                <p class="ms-3 mt-2">VISA</p>
+                <p class="mt-auto  ms-3" id="id_card">******67327667</p>
+            </div>
+            <div class="card4">
+                <p class="ms-3 mt-2  ">VISA</p>
+                <p class="mt-auto  ms-3" id="id_card">******54845667</p>
+            </div>
+        </div>
+    </div>
+    <div class="container" >
+        <div class="row">
+            <div class="col-md-3 col-sm-12">
+            <p id="palance" class="mt-5">Bank palance</p>
+            <div class="total_cash col-md-3 col-sm-12">
+                <p class="mt-2 ">total_cash</p>
+                <p class="mt-auto ms-3" >$5678</p>
+            </div>
+            <div class="carding col-md-3 col-sm-12">
+                <p class="mt-2">carding</p>
+                <p class="mt-auto">$5678</p>
+            </div>
+            <div class="Debts col-md-3 col-sm-12">
+                <p class="mt-2">Debts</p>
+                <p class="mt-auto">$5678</p>
+            </div>
+            </div>
+            <div class="col-md-9 col-sm-12 mt-5 mb-3">
+                <div class="charts-card" style="background-color: whitesmoke;">
+                    <p class="chart-title">Top 5 Owners</p>
+                    <div id="bar-chart"></div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

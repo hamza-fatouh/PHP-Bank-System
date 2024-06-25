@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Chart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  </head>
+  <style>
+    *{
+      color: #fff;
+    }
+    body{
+      background-color: #333;
+      font-family: 'Roboto', sans-serif;
+      font-family: 'Work Sans', sans-serif;
+    }
+    /* .charts-card{
+      background-color: #222;
+      color: #fff;
+      border: none;
+    }
+    aside{
+      background-color: rgb(48, 214, 192);
+      color: #fff;
+    }
+    .header{
+      background-color: #111;
+      color: #fff;
+    }
+    .main-cards .card{
+      background-color: #222; 
+      border: none;
+      color: #fff;
+    }
+    .main-cards .card p{
+      color: #fff;
+    }
+    .main-cards .card span{
+      color: #fff;
+    } */
+  </style>
+  <body>
+    <div class="grid-container">
+
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined" style="color: #fff; border: #56e7ab solid 1px; border-radius: 2px;">menu</span>
+        </div>
+        <div class="header-right">
+          <span class="material-icons-outlined" style="color: #fff; ">notifications</span>
+          <span class="material-icons-outlined" style="color: #fff; ">email</span>
+          <span class="material-icons-outlined" style="color: #fff; ">account_circle</span>
+        </div>
+      </header>
+      <aside id="sidebar" style="background-color: #40CCAC; color: #fff; width: 200px;">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+             BamBank
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="Cards.html" target="_blank">
+              <span class="material-icons-outlined">inventory_2</span>Visa Cards
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="Transfer Money.html" target="_blank">
+              <span class="material-icons-outlined">fact_check</span> Transfer Money
+            </a>
+          </li>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="home.html" target="_blank">
+              <span class="material-icons-outlined">poll</span> Home
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="Contacnt us.html" target="_blank">
+              <span class="material-icons-outlined">poll</span> Contact Us
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="ahmed.html" target="_blank">
+              <span class="material-icons-outlined">poll</span> About Us
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <main class="main-container">
+        <div class="main-title">
+          <p class="font-weight-bold">Data Charts</p>
+        </div>
+
+        <div class="main-cards">
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary" style="color: #fff; ">PRODUCTS</p>
+              <span class="material-icons-outlined text-blue" style="color: #fff; ">inventory_2</span>
+            </div>
+            <span class="text-primary font-weight-bold" style="color: #fff; ">500</span>
+          </div>
+
+          <div class="card" >
+            <div class="card-inner">
+              <p class="text-primary">Number Of Customers</p>
+              <span class="material-icons-outlined text-orange">add_shopping_cart</span>
+            </div>
+            <span class="text-primary font-weight-bold">120</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">SALES</p>
+              <span class="material-icons-outlined text-green">shopping_cart</span>
+            </div>
+            <span class="text-primary font-weight-bold">60</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">BAM ALERTS</p>
+              <span class="material-icons-outlined text-red">notification_important</span>
+            </div>
+            <span class="text-primary font-weight-bold">12</span>
+          </div>
+
+        </div>
+
+        <div class="charts">
+
+          <div class="charts-card" >
+            <p class="chart-title">Top 5 Owners</p>
+            <div id="bar-chart"></div>
+          </div>
+
+          <div class="charts-card">
+            <p class="chart-title">User's Data</p>
+            <div id="area-chart"></div>
+          </div>
+
+        </div>
+      </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

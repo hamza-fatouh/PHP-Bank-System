@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="Demoo.css">
+    <title>Transfer Money</title>
+</head>
+<style>
+    .container-fluid{
+        background-color: #333333;
+    }
+    .card{
+        background-color: #222;
+        color: #fff;
+    }
+    input{
+        background-color: #111;
+        color: #40CCAC;
+        outline: none;
+        border: none;
+    }
+    input:hover{
+    border-color: #40CCAC;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background-color: rgba(13, 182, 145, 0.568);
+    box-shadow: 0 0 5px #56c9b2 ,0 0 25px #56c9b2,0 0 50px #56c9b2,0 0 200px #56c9b2;
+    transition: 0.5s;}
+    h4{
+        color: #fff;
+    }
+    .border-line{
+        outline: #36cfc3;
+       border-right:1px solid #36cfc3;
+    }
+</style>
+<body>
+    <div class="container-fluid px-1 px-md-2 px-lg-4 py-5 mx-auto">
+        <div class="row d-flex justify-content-center">
+            <div class="col-xl-7 col-lg-8 col-md-9 col-sm-11">
+                <div class="card border-0">
+                    <div class="row justify-content-center">
+                        <h3 class="mb-4">Transfer Money Checkout</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-7 border-line pb-3">
+                            <form action="" method="post">
+                                <h4 class=" text-sm mb-0">Name Of Receiver's Card</h4>
+                                <input type="text" name="name" size="15" class="advanced2">
+                                <h4 class=" text-sm mb-0">Receiver Card Number</h4>
+                                <input type="number" name="card-num" size="18" id="cr_no" minlength="19" maxlength="19">
+                                <img class="image ml-1" src="https://i.imgur.com/WIAP9Ku.jpg">
+                                <h6>Amount</h6>
+                                <input class="advanced" type="number" size="1" minlength="3" maxlength="3">
+                                <h4 class=" text-sm mb-0">Date Time</h4>
+                                <input type="date" name="Date" size="1" minlength="3" maxlength="3">
+                        </div>
+                        <div class="col-sm-5 text-sm-center justify-content-center pt-4 pb-4">
+                            <small class="text-sm text-muted">Order number</small>
+                            <h5 class="mb-5">12345678</h5>
+                            <small class="text-sm text-muted">Amount</small>
+                                <h2 class="txt" style="color: #36cfc3;">$</h2>
+                            <button type="button" class="btn btn-red text-center mt-4" onclick="demoo3()">PAY</button>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+    <script>
+
+        x = document.querySelector(".advanced");
+        y = document.querySelector(".advanced2");
+        z = document.querySelector(".txt");
+
+        function demoo3(){
+            if(x.value === "" || y.value === ""){
+                z.innerHTML = "Invalid";
+                z.style.color = "red";
+            }
+            else{
+                z.innerHTML = (`${x.value} $ To ${y.value}`); 
+                z.style.color = "#0F877C";
+            }
+        };
+        
+    </script>
+</body>
+</html>
